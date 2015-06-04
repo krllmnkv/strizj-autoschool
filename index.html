@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Автошкола Стриж – </title>
+    <link href="vendor/bootstrap/css/bootstrap-readable.min.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <img src="pictures/logo.png">
+                <a class="navbar-brand" href="#">Автошкола Стриж</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" data-bind="foreach: $__page__.children">
+                    <!-- ko if: ($data.val('id') !== 'home') -->
+                    <li data-bind="css: {active: isVisible}">
+                        <a data-bind="text: $data.val('title').replace('Автошкола Стриж – ', ''), page-href: $data"></a>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron jumptron--light jumptron--primary" data-bind="page: {id: 'home', title: 'Автошкола Стриж – Домой', role: 'start', fx: 'slide'}">
+            <h1 class="header--center">Как выбрать автошколу?</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-block">
+                        <img src="pictures/инфографика/1.png">
+                        <p>1. Изучить условия обучения</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-block">
+                        <img src="pictures/инфографика/2.png">
+                        <p>2. Посетить открытый урок</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-block">
+                        <img src="pictures/инфографика/3.png">
+                        <p>3. Внимательно прочитать договор</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-block">
+                        <img src="pictures/инфографика/4.png">
+                        <p>4. Сравнить стоимость обчения</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-block">
+                        <img src="pictures/инфографика/5.png">
+                        <p>5. Проверить наличие автодрома</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-block">
+                        <img src="pictures/инфографика/6.png">
+                        <p>6. Отсутствие дополнительных расходов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumptron--light jumptron--primary"  data-bind="page: {id: 'category', title: 'Автошкола Стриж – Категории', fx: 'slide'}">
+            <h1>
+                <img class="header__image" src="pictures/категории.png">
+                Категории
+            </h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="category-block">
+                        <img src="pictures/категории/а.png" width="239px">
+                        <p>
+                            Подкатегория "А1" - мотоциклы с рабочим объемом двигателя внутреннего сгорания, не превышающим 125 кубических сантиметров, и максимальной мощностью, не превышающей 11 киловатт;
+                            Подкатегория А1 позволяет управлять мотоциклами с небольшим объемом двигатели и небольшой максимальной мощностью.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="category-block">
+                        <img src="pictures/категории/b.png" width="239px">
+                        <p>
+                            Категория "В" - автомобили, разрешенная максимальная масса которых не превышает 3500 килограммов и число сидячих мест которых, помимо сиденья водителя, не превышает восьми; автомобили категории "В", сцепленные с прицепом, разрешенная максимальная масса которого не превышает 750 килограммов; автомобили категории "В", сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, но не превышает массы автомобиля без нагрузки, при условии, что общая разрешенная максимальная масса такого состава транспортных средств не превышает 3500 килограммов.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="category-block">
+                        <img class="header__image" src="pictures/категории/c.png" width="239px">
+                        <p>
+                            Категория "С" - автомобили, за исключением автомобилей категории "D", разрешенная максимальная масса которых превышает 3500 килограммов; автомобили категории "С", сцепленные с прицепом, разрешенная максимальная масса которого не превышает 750 килограммов;
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="category-block">
+                        <img class="header__image" src="pictures/категории/d.png" width="239px">
+                        <p>
+                            Категория "D" - автомобили, предназначенные для перевозки пассажиров и имеющие более восьми сидячих мест, помимо сиденья водителя; автомобили категории "D", сцепленные с прицепом, разрешенная максимальная масса которого не превышает 750 килограммов;
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="category-block">
+                        <img class="header__image" src="pictures/категории/m.png" width="239px">
+                        <p>
+                            Мопеды и квадроциклы.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumptron--light jumptron--primary" data-bind="page: {id: 'schedule', title: 'Автошкола Стриж – Расписание', fx: 'slide'}">
+            <h1>
+                <img class="header__image" src="pictures/расписание.png">
+                Расписание
+            </h1>
+            <img class="schedule-image" src="pictures/расписание/расписание-всё.png">
+        </div>
+
+        <div class="jumbotron jumptron--light jumptron--primary" data-bind="page: {id: 'price', title: 'Автошкола Стриж – Цены', fx: 'slide'}">
+            <h1>
+                <img class="header__image" src="pictures/цена.png">
+                Наши цены
+            </h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="price-block">
+                        <img class="header__image" src="pictures/категории/а.png" width="239px">
+                        <div class="price-text">
+                            <span class="price-value">12 000</span>
+                            <span class="price-currecy">₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="price-block">
+                        <img class="header__image" src="pictures/категории/b.png" width="239px">
+                        <div class="price-text">
+                            <span class="price-value">25 000</span>
+                            <span class="price-currecy">₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="price-block">
+                        <img class="header__image" src="pictures/категории/c.png" width="239px">
+                        <div class="price-text">
+                            <span class="price-value">19 000</span>
+                            <span class="price-currecy">₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="price-block">
+                        <img class="header__image" src="pictures/категории/d.png" width="239px">
+                        <div class="price-text">
+                            <span class="price-value">19 000</span>
+                            <span class="price-currecy">₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="price-block">
+                        <img class="header__image" src="pictures/категории/m.png" width="239px">
+                        <div class="price-text">
+                            <span class="price-value">10 000</span>
+                            <span class="price-currecy">₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumptron--light jumptron--primary" data-bind="page: {id: 'contacts', title: 'Автошкола Стриж – Контакты', fx: 'slide'}">
+            <h1>
+                <img class="header__image" src="pictures/контакты.png">
+                Контакты
+            </h1>
+            <div class="row">
+                <div class="col-md-6" style="margin-bottom: 20px;">
+                    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kl4a1K35xYSKM2pSJIA7yaq0lfYsHE6Q&width=400&height=350"></script>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <img class="contacts__picture" src="pictures/контакты/человек.png">
+                        Секретарь: Иванов Иван Иванович
+                    </p>
+                    <p>
+                        <img class="contacts__picture" src="pictures/контакты/телефон.png">
+                        Телефон/факс: 331-78-65
+                    </p>
+                    <p>
+                        <img class="contacts__picture" src="pictures/контакты/телефон.png"> 
+                        Мобильный: +79223363636
+                    </p>
+                    <p>
+                        <img class="contacts__picture" src="pictures/контакты/остановк.png">
+                        Адрес: г. Екатеринбург, проспект Космонавтов, д. 50
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumptron--light jumptron--primary" data-bind="page: {id: 'about-us', title: 'Автошкола Стриж – О нас', fx: 'slide'}">
+            <h1>
+                <img class="header__image" src="pictures/онас.png">
+                О нас
+            </h1>
+            <p>Автошкола города Екатеринбург "Стриж" приглашает Вас пройти курс обучения вождению автомобиля, мотоцикла или мопеда по программе профессиональной подготовки водителей транспортных средств категории "А" "B" "C" "D" "M", с последшкй сдачи жкзампна в ГИБДД.</p>
+            <p>Новые программы обучения утверддлены. Заключение о соотвествии материальнрой базы получено.
+            Автошкола была создана професстоналами, которые уже 12 лет успешно занимаються данной деятельностью. С первого дня работы наш оллекьтв поставил перед собой основную заачу это качество в подготовке водителей трансротныз средств.</p>
+            <p>При выборе автошколы в Екатеринбурге важно осозновать конечную цель обучения: либо получение прав, либо получение стабильных начальных навыков вождения, за время обучения в нашей автошколе, курсант получает все необходымые знания и навыки для самостоятельного безаврийного вождения. Мы предостовляем нашим ученикам удобные условия обучения, профессональный подход в подготовке и сдача на права. Детально продуманная программа подготовки ПДД и выскокий уровень практической подготовки помогает при сдаче экзаменов в ГИБДД.</p>
+        </div>
+    </div>
+
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/knockout.js"></script>
+    <script src="vendor/pager.js"></script>
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>
