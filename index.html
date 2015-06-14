@@ -6,7 +6,13 @@
     <title>Автошкола Стриж – </title>
     <link href="vendor/bootstrap/css/bootstrap-readable.min.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
+    <!--Galary-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <!--StopGalary-->
 </head>
+
 <body>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
@@ -223,6 +229,57 @@
                 <img class="header__image" src="pictures/онас.png">
                 О нас
             </h1>
+                <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                <div id="blueimp-gallery" class="blueimp-gallery">
+                    <!-- The container for the modal slides -->
+                    <div class="slides"></div>
+                    <!-- Controls for the borderless lightbox -->
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                    <div class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body next"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default pull-left prev">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary next">
+                                        Next
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--data-gallery--> 
+                
+                <div id="links">
+                    <a href="images/banana.jpg" title="Banana" data-gallery>
+                        <img src="images/thumbnails/banana.jpg" alt="Banana">
+                    </a>
+                    <a href="images/apple.jpg" title="Apple" data-gallery>
+                        <img src="images/thumbnails/apple.jpg" alt="Apple">
+                    </a>
+                    <a href="images/orange.jpg" title="Orange" data-gallery>
+                        <img src="images/thumbnails/orange.jpg" alt="Orange">
+                    </a>
+                </div>
+            
+                <!--stop-data-gallery--> 
+            
             <p>Автошкола города Екатеринбург "Стриж" приглашает Вас пройти курс обучения вождению автомобиля, мотоцикла или мопеда по программе профессиональной подготовки водителей транспортных средств категории "А" "B" "C" "D" "M", с последшкй сдачи жкзампна в ГИБДД.</p>
             <p>Новые программы обучения утверддлены. Заключение о соотвествии материальнрой базы получено.
             Автошкола была создана професстоналами, которые уже 12 лет успешно занимаються данной деятельностью. С первого дня работы наш оллекьтв поставил перед собой основную заачу это качество в подготовке водителей трансротныз средств.</p>
@@ -235,6 +292,11 @@
     <script src="vendor/knockout.js"></script>
     <script src="vendor/pager.js"></script>
     <script src="scripts/index.js"></script>
+    <!--Galary-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+    <!--StopGalary-->
 
 </body>
 </html>
